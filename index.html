@@ -3,80 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="./style.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-     <!-- Latest compiled JavaScript -->
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>My Portfolio</title>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        /* Custom CSS can go here */
+    </style>
 </head>
 <body>
-    <section>
-        <header>
-            <h4>YF</h4>
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </header>
-        <h1>Hi There!</h1>
-        <h2>My name is Yonela Futho</h2>
-        <span><h2>Software Developer</h2></span>
-        <img src="langingpage.png" alt="alternatetext">
-    </section>
-    <main>
-     <h1>About</h1>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quidem aspernatur consequuntur earum perferendis
-         porro ipsum maiores cupiditate aliquam nulla magni voluptas, laudantium odio nesciunt omnis sunt? Provident, 
-        atque et.</p>
-    </main>
-    <section>
-        <h1>Programming Skills</h1>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Java</li>
-        <li>Firebase DB</li>
-        <li>GitHub</li>
-        <li>Netlify</li>
-        <h1>Project</h1>
-        <h4>Project 1</h4>
-        <h4>Project 2</h4>
-        <h4>Project 3</h4>
-        <h4>For More Information Please visit my Github Account or download my CV<span>CVLink</span></h4>
-    </section>
-    <section>
-        <h1>Get In Touch</h1>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="./Home"> <span class="glyphicon glyphicon-user"></span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="section-content">
+            <div class="text-content">
+                <h1>Hi There!</h1>
+                <h2>My name is Yonela Futho</h2>
+                <h2>Software Developer</h2>
+            </div>
+            <img src="langingpage.png" alt="alternative text" class="img-responsive">
+        </section>
+
+        <section class="section-content">
+            <article class="hero" id="about">
+                <img
+                  src="./langingpage.png"
+                  alt="aboutMe"
+                  loading="lazy"
+                  class="hero-img"
+                />
+                <div class="bio animate__animated animate__shakeX">
+                  <h2 class="bio-title">About Me</h2>
+                  <p class="bio-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+                    dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+                    inventore tempore minus nemo, iste ullam illo laboriosam maiores
+                    repudiandae quos!
+                  </p>
+                </div>
+          </article>
+          <article class="more-about">
+            <h2>More About Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+              nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+              autem deleniti cupiditate molestias quis unde quae totam porro dicta
+              iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+              nostrum dolor minus, libero delectus praesentium perferendis
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+              consequuntur labore? Ea totam voluptas amet!
+            </p>
+          </article>
+        </section>
+    </div>
+
+    
         <div class="container">
-            <form action="/action_page.php">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
-          
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-            </form>
-          </div>
-    </section>
-    <footer>
-        <li>LinkedIn</li>
-        <li>Github</li>
+            <h1>Programming Skills</h1>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-box">
+                        <i class="fab fa-html5 fa-5x"></i>
+                        <h4>HTML</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-box">
+                        <i class="fab fa-css3-alt fa-5x"></i>
+                        <h4>CSS</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-box">
+                        <i class="fab fa-js-square fa-5x"></i>
+                        <h4>JavaScript</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-box">
+                        <i class="fab fa-python fa-5x"></i>
+                        <h4>Python</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-box">
+                        <i class="fab fa-java fa-5x"></i>
+                        <h4>Java</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-box">
+                        <i class="fas fa-database fa-5x"></i>
+                        <h4>Firebase DB</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-box">
+                        <i class="fab fa-github fa-5x"></i>
+                        <h4>GitHub</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-box">
+                        <i class='fab fa-react fa-5x'></i>
+                        <h4>React JS</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-box">
+                        <i class="fas fa-cloud-upload-alt fa-5x"></i>
+                        <h4>Netlify</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-box">
+                        <i class="fas fa-vuejs fa-5x"></i>
+                        <h4>Vue JS</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
         
+        <article class="projects" id="projects">
+            <h2 class="projects-title">Some of my Recent Projects</h2>
+            <div class="projects-container">
+              <div class="project-container project-card">
+                <i class="fab fa-js-square fa-5x"></i>
+                <h3 class="project-title">Transportation App</h3>
+                <p class="project-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  ratione vel inventore labore commodi modi quos culpa aut saepe!
+                  Alias!
+                </p>
+                <a href="https://transportationfare.netlify.app/" target="_blank" class="project-link">Check it Out</a>
+              </div>
+              <div class="project-container project-card">
+                <i class="fab fa-python fa-5x"></i>
+                <h3 class="project-title">Banking App</h3>
+                <p class="project-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  ratione vel inventore labore commodi modi quos culpa aut saepe!
+                  Alias!
+                </p>
+                <a href="https://github.com/Yonela986/bankapp" target="_blank" class="project-link">Check it Out</a>
+              </div>
+              <div class="project-container project-card">
+                <i class='fab fa-react fa-5x'></i>
+                <h3 class="project-title">Teachers Chat App</h3>
+                <p class="project-details">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  ratione vel inventore labore commodi modi quos culpa aut saepe!
+                  Alias!
+                </p>
+                <a href="https://github.com/Yonela986/https---github.com-Yonela986-teachersparentapp" target="_blank" class="project-link">Check it Out</a>
+              </div>
+            </div>
+          </article>
+            
+        </section>
+
+        <section>
+            <h1>Get In Touch</h1>
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" class="form-control" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="form-control" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+               
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <textarea class="form-control" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="text-center">
+        <ul class="list-inline">
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Github</a></li>
+        </ul>
     </footer>
 </body>
 </html>
