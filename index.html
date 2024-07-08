@@ -1,228 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <!-- Bootstrap JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <style>
-        /* Custom CSS can go here */
-    </style>
+    <title>Yonela Futho Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
+
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="./Home"> <span class="glyphicon glyphicon-user"></span></a>
+    <!-- Scroll Button start -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+    <!-- Scroll Button end -->
+    <!-- Navbar Start-->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#">Y<span>Futho.</span>
+               </a>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <ul class="menu">
+                <li>
+                    <a href="#home" class="menu-btn">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="menu-btn">About</a>
+                </li>
+                <li>
+                    <a href="#skills" class="menu-btn">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" class="menu-btn">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="menu-btn">Contact</a>
+                </li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
-
-    <div class="container">
-        <section class="section-content">
-            <div class="text-content">
-                <h1>Hi There!</h1>
-                <h2>My name is Yonela Futho</h2>
-                <h2>Software Developer</h2>
+    <!-- Navbar End -->
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello 👋 I'm</div>
+                <div class="text-2">Yonela Futho</div>
+                <div class="text-3">And I'm a <span class="typing">Web Developer</span>
+                </div>
+               </a>
+               </a>
             </div>
-            <img src="langingpage.png" alt="alternative text" class="img-responsive">
-        </section>
-
-        <section class="section-content">
-            <article class="hero" id="about">
-                <img
-                  src="./langingpage.png"
-                  alt="aboutMe"
-                  loading="lazy"
-                  class="hero-img"
-                />
-                <div class="bio animate__animated animate__shakeX">
-                  <h2 class="bio-title">About Me</h2>
-                  <p class="bio-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-                    dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-                    inventore tempore minus nemo, iste ullam illo laboriosam maiores
-                    repudiandae quos!
-                  </p>
-                </div>
-          </article>
-          <article class="more-about">
-            <h2>More About Me</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-              nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-              autem deleniti cupiditate molestias quis unde quae totam porro dicta
-              iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-              nostrum dolor minus, libero delectus praesentium perferendis
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-              consequuntur labore? Ea totam voluptas amet!
-            </p>
-          </article>
-        </section>
-    </div>
-
-    
-        <div class="container">
-            <h1>Programming Skills</h1>
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="skill-box">
-                        <i class="fab fa-html5 fa-5x"></i>
-                        <h4>HTML</h4>
+        </div>
+    </section>
+    <!-- Home Section End -->
+    <!-- About section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title fadein">About Me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="./images/image_6483441 (1).JPG" alt="Yonela Futho">
+                    <div>
+                        <div class="wrapper">
+                            <div class="button1">
+                                <div class="icon">
+                                    <a href="https://www.linkedin.com/in/yonela-futho-60072240/" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-linkedin"></i>
+                                </div>
+                                <span>LinkedIn </a>
+                           </span>
+                            </div>
+                         
+                            </div>
+                            <div class="buttonmob1"></div>
+                            <div class="button1">
+                                <div class="icon">
+                                    <a href="https://github.com/Yonela986" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                </div>
+                                <span>Github </a>
+                           </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="skill-box">
-                        <i class="fab fa-css3-alt fa-5x"></i>
-                        <h4>CSS</h4>
+                <div class="column right">
+                    <div class="text">I'm Yonela,<span class="break"></span>
+                        </span>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="skill-box">
-                        <i class="fab fa-js-square fa-5x"></i>
-                        <h4>JavaScript</h4>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="skill-box">
-                        <i class="fab fa-python fa-5x"></i>
-                        <h4>Python</h4>
-                    </div>
+                    <p>I am a dedicated front-end developer focused on creating attractive and user-friendly websites. 
+                        I am passionate about translating design concepts into interactive digital experiences and continuously 
+                        improving my skill set to stay updated with the latest industry trends. My portfolio showcases a variety of projects that 
+                        demonstrate my ability to deliver responsive and dynamic web applications.</p>
+                    </a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="skill-box">
-                        <i class="fab fa-java fa-5x"></i>
-                        <h4>Java</h4>
-                    </div>
+        </div>
+    </section>
+    <!-- about section End -->
+    <!-- Skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title fadein">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences</div>
+                    <p>I am a Web Developer with a passion for learning and can work with estimation of future tasks and client feedback. I am highly-motivated,
+                        result oriented, self-driven, hard-working, fast learner and constantly seeking to improve
+                        my skills. I have experience in HTML, CSS, JavaScript,React,Node js,Python,Firebase DB and Java. I use Git version 
+                        control to host my projects on Github. With these skills I create interactive and responsive web experiences. I have some projects that I created using all the
+                         mentioned skills. 
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="skill-box">
-                        <i class="fas fa-database fa-5x"></i>
-                        <h4>Firebase DB</h4>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="skill-box">
-                        <i class="fab fa-github fa-5x"></i>
-                        <h4>GitHub</h4>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="skill-box">
-                        <i class='fab fa-react fa-5x'></i>
-                        <h4>React JS</h4>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="skill-box">
-                        <i class="fas fa-cloud-upload-alt fa-5x"></i>
-                        <h4>Netlify</h4>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="skill-box">
-                        <i class="fas fa-vuejs fa-5x"></i>
-                        <h4>Vue JS</h4>
+                <div class="column right">
+                    <div class="info">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                            <img src="./images/icons8-javascript-48.png" alt="javascript" width="80" />
+                        </a>
+                        <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+                            <img src="./images/icons8-react-js-16.png" alt="react.js" width="80" />
+                        </a>
+                        <a href=https://vuejs.org/tutorial/#step-1" target="_blank" rel="noreferrer">
+                            <img src="./images/icons8-vue-js-48.png" alt="redux" width="80" />
+                        </a>
+                        <a href="https://nodejs.org" target="_blank" rel="noreferrer">
+                            <img src="./images/icons8-nodejs-48.png" alt="nodejs" width="80" />
+                        </a>
+                        <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+                            <img src="./images/icons8-html5-48.png" alt="html5" width="80" />
+                        </a>
+                        <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+                            <img src="./images/icons8-css-64.png" alt="css3" width="80" />
+                        </a>
+                        <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
+                            <img src="./images/icons8-bootstrap-48.png" alt="bootstrap" width="80" />
+                        </a>
+                      
+                        <a href="https://firebase.google.com/docs/" target="_blank" rel="noreferrer">
+                            <img src="./images/icons8-firebase-48.png" alt="MongoDB" width="80" />
+                        </a>
+                        <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                            <img src="./images/icons8-github-48.png" alt="git" width="80" />
+                        </a>
+                        
                     </div>
                 </div>
             </div>
         </div>
-        
-        <article class="projects" id="projects">
-            <h2 class="projects-title">Some of my Recent Projects</h2>
-            <div class="projects-container">
-              <div class="project-container project-card">
-                <i class="fab fa-js-square fa-5x"></i>
-                <h3 class="project-title">Transportation App</h3>
-                <p class="project-details">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  ratione vel inventore labore commodi modi quos culpa aut saepe!
-                  Alias!
-                </p>
-                <a href="https://transportationfare.netlify.app/" target="_blank" class="project-link">Check it Out</a>
-              </div>
-              <div class="project-container project-card">
-                <i class="fab fa-python fa-5x"></i>
-                <h3 class="project-title">Banking App</h3>
-                <p class="project-details">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  ratione vel inventore labore commodi modi quos culpa aut saepe!
-                  Alias!
-                </p>
-                <a href="https://github.com/Yonela986/bankapp" target="_blank" class="project-link">Check it Out</a>
-              </div>
-              <div class="project-container project-card">
-                <i class='fab fa-react fa-5x'></i>
-                <h3 class="project-title">Teachers Chat App</h3>
-                <p class="project-details">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                  ratione vel inventore labore commodi modi quos culpa aut saepe!
-                  Alias!
-                </p>
-                <a href="https://github.com/Yonela986/https---github.com-Yonela986-teachersparentapp" target="_blank" class="project-link">Check it Out</a>
-              </div>
-            </div>
-          </article>
-            
-        </section>
+    </section>
+    <!-- Skills section end -->
+     
+    <!-- Project section start -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title fadein">My Projects</h2>
+          
+            <div>
+                <div class="card">
+                    <a href="https://transportationfare.netlify.app" target="_blank" rel="noreferrer" title="Food Fire App">
+                        <div class="box">
+                            <img src="./images/logo.png" alt="Food Fire App">
 
-        <section>
-            <h1>Get In Touch</h1>
-            <form action="/action_page.php">
-                <div class="form-group">
-                    <label for="fname">First Name</label>
-                    <input type="text" class="form-control" id="fname" name="firstname" placeholder="Your name..">
-                </div>
-                <div class="form-group">
-                    <label for="lname">Last Name</label>
-                    <input type="text" class="form-control" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </a>
+                    <a href="https://github.com/Yonela986/transportation" target="_blank" rel="noreferrer" title="FoodFire App Github Repository">
+                        <p>Transportation Web Page</p>
+                    </a>
+
+                    <p>HTML,CSS and JavaScript</p>
+
                 </div>
                
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <textarea class="form-control" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-        </section>
-    </div>
+                
+                <div class="card">
+                    <a href="#" target="_blank" rel="noreferrer" title="Counter App">
+                        <div class="box">
+                            <img src="./images/langingpage.png" alt="Banking App">
 
-    <footer class="text-center">
-        <ul class="list-inline">
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Github</a></li>
-        </ul>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Yonela986/bankapp/tree/main/bankingApp" target="_blank" rel="noreferrer" title="Counter App Github Repository">
+                        <p>Banking App</p>
+                    </a>
+
+                    <p>Python, CSS and Tinkiter as GUI</p>
+                </div>
+                <div class="card">
+                    <a href="https://gamechoice.netlify.app/" target="_blank" rel="noreferrer" title="Counter App">
+                        <div class="box">
+                            <img src="./images/download.jfif" alt="Banking App">
+
+                        </div>
+                    </a>
+                    <a href="https://github.com/Yonela986/game-user-choice" target="_blank" rel="noreferrer" title="Counter App Github Repository">
+                        <p>Rock Paper Scissor Game</p>
+                    </a>
+
+                    <p>HTML and JS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project section end -->
+    <!-- Contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title fadein">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Reach Out to me!</div>
+                    <p>Discuss a Project or just want to say Hi? My inbox is open for all.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Yonela Futho</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Cape Town</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope email-icon"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title"><a href="mailto:yoza.futho@gmail.com" target="_blank">yoza.futho@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text1">Stay Connected</div>
+                    <div>
+                        <div class="wrapper">
+                            <div class="button1">
+                                <div class="icon">
+                                    <a href="https://www.linkedin.com/in/yonela-futho-60072240/" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-linkedin"></i>
+                                </div>
+                                <span>LinkedIn </a>
+                           </span>
+                            </div>
+                          
+                            <div class="buttonmob1"></div>
+                            <div class="button1">
+                                <div class="icon">
+                                    <a href="https://github.com/Yonela986" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                </div>
+                                <span>Github </a>
+                           </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Describe Project..." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section end -->
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="https://www.linkedin.com/in/yonela-futho-60072240/" target="_blank" rel="noreferrer">Yonela Futho</a> | <span class="far fa-copyright"></span> <span id="year"></span> All rights reserved </span>
     </footer>
+    <!-- footer section end -->
+    <!-- External Javascript File start-->
+    <script src="script.js" async></script>
+    <!-- External Javascript File end-->
 </body>
+
 </html>
