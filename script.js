@@ -91,6 +91,23 @@ $(document).ready(function () {
     });
     // owl carousel script end
   });
+  //CV download
+  document.getElementById('download-cv').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    fetch('assets/FuthoYonela-Curriculum vitae.pdf')
+        .then(response => {
+            if(response.ok) {
+                window.open('assets/FuthoYonela-Curriculum vitae.pdf', '_blank');
+            } else {
+                alert('Sorry, the CV is not available at the moment.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred while trying to download the CV.');
+        });
+});
   
   // Get the current year
   const currentYear = new Date().getFullYear();
