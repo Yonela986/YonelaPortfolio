@@ -115,7 +115,7 @@ html {
 /* Home Section Styling */
 .home {
   display: flex;
-  background: url(images/image_6\ \(2\).JPG) no-repeat center;
+  background: url(images/luca-bravo-XJXWbfSo2f0-unsplash.jpg) no-repeat center;
   height: 100vh;
   background-size: cover;
   background-attachment: fixed;
@@ -222,25 +222,36 @@ section .title::after {
 }
 
 /* about section styling */
-.about .title::after {
+.about .about-content::after {
   content: "";
+  display: table;
+  clear: both;
 }
 
+.about .about-content{
+  display:flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 .about .about-content .left {
   width: 45%;
+ 
 }
 .about .about-content .left img {
-  height: 400px;
-  width: 400px;
+  height: auto;
+  max-width: 90%;
   object-fit: cover;
   border-radius: 20px;
 }
 .about .about-content .right {
-  width: 55%;
+  width: 50%;
 }
 .about .about-content .right .text {
   font-size: 25px;
   font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  color: #333;
   margin-bottom: 10px;
 }
 .about .about-content .right .text span {
@@ -260,25 +271,29 @@ section .title::after {
   padding: 3px 25px;
   margin-top: 20px;
   border-radius: 6px;
+  text-decoration: none;
   border: 2px solid #A03232;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease;
 }
 .about .about-content .right a:hover {
-  color: #A03232;
-  background: none;
+  color: #871b1b;
 }
-
+.social-links{
+  margin-top: 20px;
+}
 /* Social media section styling */
 .button1 {
   float: left;
   width: 45px;
   height: 45px;
+  margin-right: 10px;
   cursor: pointer;
   background: #fff;
   overflow: hidden;
-  border-radius: 35px;
+  border-radius: 50%;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
 }
 .button1 .icon {
   width: 45px;
@@ -290,24 +305,31 @@ section .title::after {
 }
 
 .button1 .icon i {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 45px;
   color: #A03232;
   transition: all 0.3s ease-in-out;
 }
 .button1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   width: 150px;
 }
 .button1:hover i {
   color: #fff;
 }
 .button1 span {
+  display: none;
   font-size: 15px;
   font-weight: 500;
   line-height: 10px;
   margin-left: 5px;
 }
-
+.button1:hover span{
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 14px;
+}
 .button1:hover .icon {
   background: #307de1;
 }
@@ -315,11 +337,14 @@ section .title::after {
 .button1 span a {
   color: #307de1;
 }
-
+.about .about-content::after{
+  content: "";
+  display: table;
+  clear: both;
+}
 /* skills section styling */
 .skills .title::after {
   background: #111;
-  content: "what i know";
 }
 .skills .skills-content .column {
   width: calc(50% - 30px);
@@ -362,9 +387,9 @@ section .title::after {
 }
 
 /* Project section styling */
-.projects .title::after {
+/* .projects .title::after {
   content: "check my work";
-}
+} */
 /* Basic styles for the projects section */
 .projects {
   background-color: #f2f2f2;
@@ -383,11 +408,11 @@ section .title::after {
   color: #333;
 }
 
-.fadein {
-  animation: fadein 2s;
+.fade {
+  animation: fade 2s;
 }
 
-@keyframes fadein {
+@keyframes fade {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
@@ -514,7 +539,6 @@ section .title::after {
 /* contact section styling */
 .contact .title::after {
   background: #111;
-  content: "get in touch";
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
