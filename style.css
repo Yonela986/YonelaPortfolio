@@ -380,7 +380,7 @@ section .title::after {
   background: #111;
   color: #fff; 
   /* padding: 80px 0; */
-  height: 90%;
+  height: 100px;
 }
 .skills .title::after {
   display: none;
