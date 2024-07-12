@@ -379,7 +379,7 @@ section .title::after {
 .skills .title::after {
   background: #111;
   /* max-width: 75%; */
-  max-height: 80%;
+  height: 80%;
 }
 .skills .skills-content .column {
   width: calc(50% - 30px);
