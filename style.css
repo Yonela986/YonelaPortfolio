@@ -384,7 +384,7 @@ section .title::after {
 }
 .skills .title::after {
   display: none;
-  padding-top: 30px;
+  padding-top: 10%;
 }
 .max-width {
   max-width: 1200px; 
