@@ -284,7 +284,7 @@ section .title::after {
 }
 /* Social media section styling */
 .button1 {
-  float: left;
+  float: right;
   width: 45px;
   height: 45px;
   margin-right: 10px;
