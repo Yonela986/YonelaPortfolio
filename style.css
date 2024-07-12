@@ -347,22 +347,12 @@ section .title::after {
 .skills .title::after {
   background: #111;
 }
-.project-cards {
-  display: flex; 
-  gap: 20px; 
-}
-.card {
-  flex: 1; 
-  padding: 20px; 
-  border-radius: 8px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
 .skills .skills-content .column {
-  width: calc(60% - 40px);
+  width: calc(50% - 30px);
 }
 .skills .skills-content .left .text {
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 .skills .skills-content .left p {
@@ -436,12 +426,14 @@ section .title::after {
 }
 
 .card {
+  flex: 1;
   display: inline-block; /* Display cards inline horizontally */
   vertical-align: top; /* Align cards at the top of the container */
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px 10px; /* Adjust margin for spacing between cards */
+  margin: 50px 30px; /* Adjust margin for spacing between cards */
+  padding: 20px;
   max-width: 300px;
   text-align: left;
   overflow: hidden;
@@ -455,6 +447,8 @@ section .title::after {
 .card .box {
   overflow: hidden;
   position: relative;
+  display: flex; /* Ensures cards are in a row */
+  gap: 20px;
 }
 
 .card .box img {
