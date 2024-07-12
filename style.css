@@ -379,7 +379,7 @@ section .title::after {
 .skills{
   background: #111;
   color: #fff; 
-  padding: 100px 0; 
+  padding: -100px 0; 
   height: 200px;
 }
 .skills .title::after {
