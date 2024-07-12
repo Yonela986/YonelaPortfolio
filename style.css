@@ -378,6 +378,7 @@ section .title::after {
 /* skills section styling */
 .skills .title::after {
   background: #111;
+  max-width: 60%;
 }
 .skills .skills-content .column {
   width: calc(50% - 30px);
