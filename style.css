@@ -384,6 +384,7 @@ section .title::after {
 }
 .skills .title::after {
   display: none;
+  padding-top: 30px;
 }
 .max-width {
   max-width: 1200px; 
@@ -395,8 +396,7 @@ section .title::after {
   flex-direction: row; 
   justify-content: space-between; 
   align-items: flex-start; 
-  padding: 50%;
-  margin: 20px;
+  padding-top: 50px;
 }
 .skills .skills-content .column {
   width: calc(50% - 30px);
