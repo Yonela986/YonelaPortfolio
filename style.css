@@ -277,7 +277,7 @@ section .title::after {
   transition: background 0.3s ease;
 }
 .about .about-content .right a:hover {
-  color: #871b1b;
+  color: #007bff;
 }
 .social-links{
   margin-top: 20px;
@@ -379,8 +379,8 @@ section .title::after {
 .skills{
   background: #111;
   color: #fff; 
-  padding: 80px 0;
-  height: fit-content;
+  /* padding: 80px 0; */
+  height: 90%;
 }
 .skills .title::after {
   display: none;
