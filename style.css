@@ -379,8 +379,8 @@ section .title::after {
 .skills{
   background: #111;
   color: #fff; 
-  /* padding: 80px 0; */
-  
+  padding: 80px 0; */
+  height: 200px;
 }
 .skills .title::after {
   display: none;
@@ -389,7 +389,6 @@ section .title::after {
   max-width: 1200px; 
   margin: 0 auto; 
   padding: 0 20px;
-  
 }
 .skills .skills-content {
   display: flex;
