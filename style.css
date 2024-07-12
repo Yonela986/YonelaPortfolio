@@ -378,9 +378,12 @@ section .title::after {
 /* skills section styling */
 .skills{
   background: #111;
-  color: #fff; 
-  padding: 20px 0; 
-  height: 54rem;
+    color: #fff; 
+    padding: 20px 0; 
+    min-height: 100vh; /* Ensures the section covers the entire viewport height */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;
 }
 .skills .title::after {
   display: none;
