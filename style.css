@@ -376,16 +376,24 @@ section .title::after {
   clear: both;
 }
 /* skills section styling */
-.skills .title::after {
+.skills{
   background: #111;
-  /* max-width: 75%; */
-  /* height: 100%; */
+  color: #fff; 
   padding: 80px 0;
 }
+.skills .title::after {
+  display: none;
+}
 .max-width {
-  max-width: 1200px; /* Adjust the maximum width as per your design */
-  margin: 0 auto; /* Centers the section horizontally */
-  padding: 0 20px; /* Adds padding on the sides */
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px;
+}
+.skills .skills-content {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: flex-start; 
 }
 .skills .skills-content .column {
   width: calc(50% - 30px);
