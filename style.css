@@ -396,7 +396,7 @@ section .title::after {
   flex-direction: row; 
   justify-content: space-between; 
   align-items: flex-start; 
-  padding-top: 90px;
+  padding-top: 50%;
 }
 .skills .skills-content .column {
   width: calc(50% - 30px);
