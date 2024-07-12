@@ -347,12 +347,22 @@ section .title::after {
 .skills .title::after {
   background: #111;
 }
+.project-cards {
+  display: flex; 
+  gap: 20px; 
+}
+.card {
+  flex: 1; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
 .skills .skills-content .column {
-  width: calc(50% - 30px);
+  width: calc(60% - 40px);
 }
 .skills .skills-content .left .text {
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 900;
   margin-bottom: 10px;
 }
 .skills .skills-content .left p {
