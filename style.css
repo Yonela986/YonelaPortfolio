@@ -115,11 +115,12 @@ html {
 /* Home Section Styling */
 .home {
   display: flex;
-  background: url(images/luca-bravo-XJXWbfSo2f0-unsplash.jpg) no-repeat center;
+  /* background: url(images/luca-bravo-XJXWbfSo2f0-unsplash.jpg) no-repeat center; */
+  background-color: #000;
   height: 100vh;
   background-size: cover;
   background-attachment: fixed;
-  color: black;
+  color: white;
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
 }
