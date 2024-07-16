@@ -69,9 +69,12 @@ $(document).ready(function () {
 }
 
 // Event listener for menu button click
-$(document).on("click", ".menu-btn", function() {
-    toggleMenu();
+$(".menu-btn").click(function() {
+  toggleMenu();
 });
+// $(document).on("click", ".menu-btn", function() {
+//     toggleMenu();
+// });
   });
   //CV download
   document.getElementById('download-cv').addEventListener('click', function(e) {
