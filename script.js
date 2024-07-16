@@ -77,7 +77,7 @@ $(document).ready(function () {
 // }
 
 // Event listener for menu button click
-$(".menu-btn").click(function() {
+$(document).on("click", ".menu-btn").click(function() {
   toggleMenu();
 });
  
