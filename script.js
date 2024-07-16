@@ -67,20 +67,11 @@ $(document).ready(function () {
         sidebar.style.left = "-250px";
     }
 }
-// function toggleMenu() {
-//   var sidebar = $("#sidebar");
-//   if (sidebar.css("left") === "-250px") {
-//       sidebar.css("left", "0");
-//   } else {
-//       sidebar.css("left", "-250px");
-//   }
-// }
 
 // Event listener for menu button click
-$(document).on("click", ".menu-btn").click(function() {
-  toggleMenu();
+$(document).on("click", ".menu-btn", function() {
+    toggleMenu();
 });
- 
   });
   //CV download
   document.getElementById('download-cv').addEventListener('click', function(e) {
