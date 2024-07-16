@@ -41,19 +41,23 @@ $(document).ready(function () {
     const animationScript = ["Front End Developer", "Software Developer"];
   
     // Typing animation script start
-    new Typed(".typing", {
-      strings: animationScript,
-      typeSpeed: 100,
-      backSpeed: 60,
-      loop: true,
-    });
-  
-    new Typed(".typing2", {
-      strings: animationScript,
-      typeSpeed: 100,
-      backSpeed: 60,
-      loop: true,
-    });
+    if ($('.typing').length > 0) {
+      new Typed('.typing', {
+          strings: animationScript,
+          typeSpeed: 100,
+          backSpeed: 60,
+          loop: true,
+      });
+  }
+
+  if ($('.typing2').length > 0) {
+      new Typed('.typing2', {
+          strings: animationScript,
+          typeSpeed: 100,
+          backSpeed: 60,
+          loop: true,
+      });
+  }
  
   function toggleMenu() {
     var sidebar = document.getElementById("sidebar");
