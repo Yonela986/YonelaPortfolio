@@ -59,22 +59,18 @@ $(document).ready(function () {
       });
   }
  
-  function toggleMenu() {
-    var sidebar = document.getElementById("sidebar");
-    if (sidebar.style.left === "-250px") {
-        sidebar.style.left = "0";
+  $(document).on("click", ".menu-btn", function() {
+    toggleMenu();
+});
+
+function toggleMenu() {
+    var sidebar = $("#sidebar");
+    if (sidebar.css("left") === "-250px") {
+        sidebar.css("left", "0");
     } else {
-        sidebar.style.left = "-250px";
+        sidebar.css("left", "-250px");
     }
 }
-
-// Event listener for menu button click
-$(".menu-btn").click(function() {
-  toggleMenu();
-});
-// $(document).on("click", ".menu-btn", function() {
-//     toggleMenu();
-// });
   });
   //CV download
   document.getElementById('download-cv').addEventListener('click', function(e) {
