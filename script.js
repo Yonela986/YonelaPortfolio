@@ -54,50 +54,29 @@ $(document).ready(function () {
       backSpeed: 60,
       loop: true,
     });
-    // Typing animation script End
-  
-    // toggle menu/navbar script start
-    // $(".menu-btn").click(function () {
-    //   $(".navbar .menu").toggleClass("active");
-    //   $(".menu-btn i").toggleClass("active");
-    // });
-  //   $(document).on("click", ".menu-btn", function() {
-  //     $(".menu").toggleClass("active");
-  //     $(".menu-btn i").toggleClass("active");
-  // });
-  function toggleMenu() {
-    var sidebar = document.getElementById("sidebar");
-    if (sidebar.style.left === "-250px") {
-        sidebar.style.left = "0";
-    } else {
-        sidebar.style.left = "-250px";
-    }
+ 
+//   function toggleMenu() {
+//     var sidebar = document.getElementById("sidebar");
+//     if (sidebar.style.left === "-250px") {
+//         sidebar.style.left = "0";
+//     } else {
+//         sidebar.style.left = "-250px";
+//     }
+// }
+function toggleMenu() {
+  var sidebar = $("#sidebar");
+  if (sidebar.css("left") === "-250px") {
+      sidebar.css("left", "0");
+  } else {
+      sidebar.css("left", "-250px");
+  }
 }
-    
-    // // toggle menu/navbar script end
-  
-    // owl carousel script start
-    // $(".carousel").owlCarousel({
-    //   margin: 20,
-    //   loop: true,
-    //   autoplayTimeOut: 2000,
-    //   autoplayHoverPause: true,
-    //   responsive: {
-    //     0: {
-    //       items: 1,
-    //       nav: false,
-    //     },
-    //     600: {
-    //       items: 2,
-    //       nav: false,
-    //     },
-    //     1000: {
-    //       items: 3,
-    //       nav: false,
-    //     },
-    //   },
-    // });
-    // owl carousel script end
+
+// Event listener for menu button click
+$(".menu-btn").click(function() {
+  toggleMenu();
+});
+ 
   });
   //CV download
   document.getElementById('download-cv').addEventListener('click', function(e) {
